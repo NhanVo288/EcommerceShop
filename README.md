@@ -1,4 +1,4 @@
- # [eCommerceshop](https://eCommerceshop.netlify.app/) Clothes Ecommerce website and dashboard Documentation
+ # [eCommerceshop] Clothes Ecommerce website and dashboard Documentation
  
    -  Welcome to the documentation for the eCommerceshop Clothes an open source e-commerce built using the MERN stack (MongoDB, Express, React, Node.js) with a Vite frontend project. This document will guide you through the key features and functionalities of the application.
 
