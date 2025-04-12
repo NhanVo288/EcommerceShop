@@ -34,7 +34,6 @@
 
 [![My Skills](https://skillicons.dev/icons?i=js,react,materialui,nodejs,express,mongodb)](https://skillicons.dev)
 
-<img src="https://camo.githubusercontent.com/451061eb9714c2135705a1ad757017cc943627ca474d8a20e78209214469bf72/68747470733a2f2f6437756d7169637069373236332e636c6f756466726f6e742e6e65742f696d672f70726f647563742f65306364363161372d316336352d343561302d393765652d3737363364646335313533612f39383834313664302d323562632d346264322d623864622d6633343764306131393335642e706e67"> 
  
 
   
@@ -200,7 +199,6 @@ For your Google client IDs, you can obtain them by creating apps on the respecti
 ## Illustration of Google Oauth process (without Passport or any googleapis npm package)
  throw this diagram you will learn how OAuth integrations work and specifically how you can set up a Google OAuth integration with your own Node.js application and it the end the concepts are the same irrespective of the service provider
 
-<img src="https://github.com/mohamedzhioua/eCommerceShop-ecommerce/blob/main/client/src/assets/google-oauth.jpeg">
 
  ---
 ## Authentication / Authorization
@@ -215,9 +213,6 @@ Upon receiving a response from the RefreshToken API, the original request is rea
 Should the Refresh Token expire, a 'Refresh Token Invalid' message will be presented with a 403 HTTP status code, indicating that the user needs to reauthenticate.
 
 In situations where a 403 error occurs during the RefreshToken API process, a user-friendly notification in the form of a "sweet alert" will be displayed for 5 seconds. Subsequently, all local storage will be cleared, and the window will be reloaded for a complete sign-out effect. This ensures that users are aware of the situation and provided with a smooth logout experience.
-
- <img src="https://github.com/mohamedzhioua/eCommerceShop-ecommerce/blob/main/client/src/assets/authentication_flow.jpeg">
- <img src="https://github.com/mohamedzhioua/eCommerceShop-ecommerce/blob/main/client/src/assets/user_roles_cover.jpeg">
 
 ## Admin Dashboard
 The Admin Dashboard is a powerful tool that allows administrators to manage various aspects of the platform. Admins can control categories, products, brands, sizes, and more. They can also view order history, sales analytics, and manage featured products.
