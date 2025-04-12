@@ -47,7 +47,6 @@
   - [x] Using **formik** building forms .
   - [x] Using **nodemailer**  for User **email verification**.
   - [x] User authentication via **Google OAuth** implemented using Node.js **(without Passport or any googleapis npm package)** 
-  - [x] User authentication **Facebook** for easy access.
   - [x] **Admin dashboard** for administrators to manage the platform efficiently, featuring charts and visualizations for data analysis.
   - [x] User-friendly interface for customers to explore and purchase products.
   - [x] Create, update, and delete categories with support for **nested categories**.
@@ -86,7 +85,6 @@ npm install
 👉3: Create a .env file in the frontend directory and add the following variables:
 
 ```bash
-VITE_FACEBOOK_APP_ID=<Your facebook app id>
 VITE_GOOGLE_CLIENT_ID=<Your google web Client id>
 VITE_GOOGLE_OAUTH_REDIRECT_URL=<Your google redicrect URL>
 VITE_API_URL==<Your server URL>
@@ -193,11 +191,9 @@ To configure Cloudinary, follow these steps:
 
   👉2: After creating an account, you will obtain a CLOUDINARY_NAME, CLOUDINARY_API_KEY, and CLOUDINARY_API_SECRET. Use these values in your environment variables.
 ```
-  -  Facebook and VITE_GOOGLE_CLIENT_ID , and VITE_GOOGLE_OAUTH_REDIRECT_URL
+  - VITE_GOOGLE_CLIENT_ID , and VITE_GOOGLE_OAUTH_REDIRECT_URL
 ```bash
-For your Facebook and Google client IDs, you can obtain them by creating apps on the respective platforms:
-
-  👉 Facebook: Create an app on the Facebook for Developers platform to get your VITE_FACEBOOK_APP_ID.
+For your Google client IDs, you can obtain them by creating apps on the respective platforms:
 
   👉  Google: Follow the instructions outlined earlier to obtain your VITE_GOOGLE_CLIENT_ID and VITE_GOOGLE_OAUTH_REDIRECT_URL
   ```
@@ -208,7 +204,7 @@ For your Facebook and Google client IDs, you can obtain them by creating apps on
 
  ---
 ## Authentication / Authorization
-eCommerceshop offers a robust authentication system that enables users to conveniently and securely access the platform through their Google and Facebook accounts. Additionally, for users who choose to log in using their email addresses, an email containing a verification link will be sent to ensure the authenticity of their account.
+eCommerceshop offers a robust authentication system that enables users to conveniently and securely access the platform through their Google. Additionally, for users who choose to log in using their email addresses, an email containing a verification link will be sent to ensure the authenticity of their account.
 
 Our platform employs **role-based access control for authorization**, which involves categorizing permissions into roles such as "User" or "Admin" and then assigning these roles to respective users. This practice is a widely recognized and effective method for organizing authorization mechanisms.
 
