@@ -73,7 +73,7 @@
  👉1: Clone the GitHub repository to your local machine:
 
 ```bash
-git clone https://github.com/yourusername/eCommerceshop.git
+git clone https://github.com/NhanVo288/EcommerceShop.git
 ```
 
 👉2: Install the required dependencies for the frontend:
