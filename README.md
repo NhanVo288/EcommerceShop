@@ -32,7 +32,7 @@
   ---
 ### :space_invader: Tech Stack
 
-[![My Skills](https://skillicons.dev/icons?i=js,react,materialui,nodejs,express,mongodb)](https://skillicons.dev)
+[![My Skills]
 
  
 
