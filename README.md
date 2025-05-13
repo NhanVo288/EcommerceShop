@@ -21,8 +21,6 @@
    - 🔗 Search and Filters
    - 🔗 Orders and Sales
    - 🔗 Payment Options
-   - 🔗 Contributing
-   - 🔗 License
  
  ---
  ###  Introduction
@@ -34,9 +32,8 @@
   ---
 ### :space_invader: Tech Stack
 
-[![My Skills](https://skillicons.dev/icons?i=js,react,materialui,nodejs,express,mongodb)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=js,react,materialui,nodejs,express,mongodb)
 
-<img src="https://camo.githubusercontent.com/451061eb9714c2135705a1ad757017cc943627ca474d8a20e78209214469bf72/68747470733a2f2f6437756d7169637069373236332e636c6f756466726f6e742e6e65742f696d672f70726f647563742f65306364363161372d316336352d343561302d393765652d3737363364646335313533612f39383834313664302d323562632d346264322d623864622d6633343764306131393335642e706e67"> 
  
 
   
@@ -49,7 +46,6 @@
   - [x] Using **formik** building forms .
   - [x] Using **nodemailer**  for User **email verification**.
   - [x] User authentication via **Google OAuth** implemented using Node.js **(without Passport or any googleapis npm package)** 
-  - [x] User authentication **Facebook** for easy access.
   - [x] **Admin dashboard** for administrators to manage the platform efficiently, featuring charts and visualizations for data analysis.
   - [x] User-friendly interface for customers to explore and purchase products.
   - [x] Create, update, and delete categories with support for **nested categories**.
@@ -75,7 +71,7 @@
  👉1: Clone the GitHub repository to your local machine:
 
 ```bash
-git clone https://github.com/yourusername/eCommerceshop.git
+git clone https://github.com/NhanVo288/EcommerceShop.git
 ```
 
 👉2: Install the required dependencies for the frontend:
@@ -88,7 +84,6 @@ npm install
 👉3: Create a .env file in the frontend directory and add the following variables:
 
 ```bash
-VITE_FACEBOOK_APP_ID=<Your facebook app id>
 VITE_GOOGLE_CLIENT_ID=<Your google web Client id>
 VITE_GOOGLE_OAUTH_REDIRECT_URL=<Your google redicrect URL>
 VITE_API_URL==<Your server URL>
@@ -195,22 +190,19 @@ To configure Cloudinary, follow these steps:
 
   👉2: After creating an account, you will obtain a CLOUDINARY_NAME, CLOUDINARY_API_KEY, and CLOUDINARY_API_SECRET. Use these values in your environment variables.
 ```
-  -  Facebook and VITE_GOOGLE_CLIENT_ID , and VITE_GOOGLE_OAUTH_REDIRECT_URL
+  - VITE_GOOGLE_CLIENT_ID , and VITE_GOOGLE_OAUTH_REDIRECT_URL
 ```bash
-For your Facebook and Google client IDs, you can obtain them by creating apps on the respective platforms:
-
-  👉 Facebook: Create an app on the Facebook for Developers platform to get your VITE_FACEBOOK_APP_ID.
+For your Google client IDs, you can obtain them by creating apps on the respective platforms:
 
   👉  Google: Follow the instructions outlined earlier to obtain your VITE_GOOGLE_CLIENT_ID and VITE_GOOGLE_OAUTH_REDIRECT_URL
   ```
 ## Illustration of Google Oauth process (without Passport or any googleapis npm package)
  throw this diagram you will learn how OAuth integrations work and specifically how you can set up a Google OAuth integration with your own Node.js application and it the end the concepts are the same irrespective of the service provider
 
-<img src="https://github.com/mohamedzhioua/eCommerceShop-ecommerce/blob/main/client/src/assets/google-oauth.jpeg">
 
  ---
 ## Authentication / Authorization
-eCommerceshop offers a robust authentication system that enables users to conveniently and securely access the platform through their Google and Facebook accounts. Additionally, for users who choose to log in using their email addresses, an email containing a verification link will be sent to ensure the authenticity of their account.
+eCommerceshop offers a robust authentication system that enables users to conveniently and securely access the platform through their Google. Additionally, for users who choose to log in using their email addresses, an email containing a verification link will be sent to ensure the authenticity of their account.
 
 Our platform employs **role-based access control for authorization**, which involves categorizing permissions into roles such as "User" or "Admin" and then assigning these roles to respective users. This practice is a widely recognized and effective method for organizing authorization mechanisms.
 
@@ -221,9 +213,6 @@ Upon receiving a response from the RefreshToken API, the original request is rea
 Should the Refresh Token expire, a 'Refresh Token Invalid' message will be presented with a 403 HTTP status code, indicating that the user needs to reauthenticate.
 
 In situations where a 403 error occurs during the RefreshToken API process, a user-friendly notification in the form of a "sweet alert" will be displayed for 5 seconds. Subsequently, all local storage will be cleared, and the window will be reloaded for a complete sign-out effect. This ensures that users are aware of the situation and provided with a smooth logout experience.
-
- <img src="https://github.com/mohamedzhioua/eCommerceShop-ecommerce/blob/main/client/src/assets/authentication_flow.jpeg">
- <img src="https://github.com/mohamedzhioua/eCommerceShop-ecommerce/blob/main/client/src/assets/user_roles_cover.jpeg">
 
 ## Admin Dashboard
 The Admin Dashboard is a powerful tool that allows administrators to manage various aspects of the platform. Admins can control categories, products, brands, sizes, and more. They can also view order history, sales analytics, and manage featured products.
