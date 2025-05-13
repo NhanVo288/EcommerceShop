@@ -34,7 +34,6 @@
 
 [![My Skills](https://skillicons.dev/icons?i=js,react,materialui,nodejs,express,mongodb)
 
- 
 
   
 ---
@@ -180,7 +179,7 @@ Log in to the PayPal Developer Dashboard at https://developer.paypal.com/dashboa
 In the PayPal Developer Dashboard, navigate to the "My Apps & Credentials" section. Click on "Create App" to create a new sandbox app. Provide basic information about your application.
 
 Once your sandbox app is created, you will find the Client ID under the "REST API apps" section. This Client ID is a key your application uses to authenticate with the PayPal REST APIs. Use this PAYPAL_CLIENT_ID in your environment variables.
-``` 
+```   
 
  -  Cloudinary Variables
  ```bash
