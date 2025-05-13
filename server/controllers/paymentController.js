@@ -23,7 +23,7 @@ module.exports = {
       });
       res.status(200).json(paymentIntent.client_secret);
     } catch (error) {
-      return res.status(500).send("Error: " + error.message);
+      console.log(error);
     }
   },
 };
